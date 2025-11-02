@@ -7,22 +7,41 @@ This repository is the central hub for all components of the Parallax project, f
 http://104.197.87.77:8080/
 ---
 
-## 🏛️ Technical Architecture & Google Cloud AI Integration
+# 🏛️ Technical Architecture & Google Cloud Integration
+Parallax is architected as a modern, cloud-native application, leveraging a microservice-inspired approach where each detection modality can be scaled and updated independently. The entire platform is built upon the powerful, scalable, and secure infrastructure of Google Cloud to ensure performance and reliability.
 
-Parallax is architected as a modern, cloud-native application, leveraging a microservice-inspired approach where each detection modality can be scaled and updated independently. Our commitment to high-quality, modular code is evident in our clean project structure and well-documented components.
+## How We Use Google Cloud to Deliver Value
+Our use of Google Cloud is focused on two key areas: powering our intelligent analysis and ensuring a seamless user experience.
 
-The entire platform is built upon the powerful, scalable, and secure infrastructure of **Google Cloud**.
+## 🧠 For Intelligent Text Analysis
+We combine Google's powerful AI services to create an instant, authoritative verification engine for our users.
 
-### Our Use of Google Cloud AI:
+### Gemini, Fact Checker, & Search APIs: 
+This trio forms our real-time verification engine.
+Gemini API first pinpoints the central claim within a piece of text.
+The Fact Checker and Search APIs then instantly validate that claim against trusted global sources and up-to-date search results.
 
-* **Use of Google Fact checker tools**
-    * Use of Fact check tools api along with search engine API and News APIs is used to detect missinformation in text modality    
+### User Value: 
+This delivers authoritative, real-time answers directly to the user, moving beyond a simple "fake" label to provide actual, verified information.
 
-* **Cloud Run (Scalable Serverless Backend):**
-    * Our entire backend, built with Python (Flask/FastAPI), is deployed on Cloud Run. This provides a fully managed, serverless platform that automatically scales from zero to handle any workload, ensuring cost-efficiency and operational excellence. The backend serves as the central API gateway for our frontend and web extension.
+## ⚙️ For Robust Deployment & Performance
+We use Google's infrastructure to ensure Parallax is always fast, secure, and reliable.
 
-* **Cloud Storage:**
-    * We use Cloud Storage as our primary data lake. It stores our massive training datasets (e.g., the 140k real/fake face images), raw media for analysis, and, most importantly, our versioned model artifacts, ensuring a single source of truth for our ML models.
+### Google Compute Engine (VM Instances & Load Balancer): 
+This is our high-performance engine.
+We use GCE to host our custom AI models (rPPG, image detectors, etc.) and our n8n agentic workflows.
+The Load Balancer ensures we can handle user demand efficiently by managing our VM instances, scaling resources, and even shutting down instances when demand is low to maintain cost-effectiveness.
+
+### User Value: 
+This guarantees fast, real-time analysis and a smooth, uninterrupted service that is always responsive.
+
+### Google Cloud Storage & Docker: 
+This is the backbone of our application's stability and security.
+We use Google Cloud Storage buckets for common, secure storage of our model artifacts and user-uploaded media across multiple instances.
+The entire application is containerized with Docker, ensuring consistency from development to deployment on Google Cloud.
+
+### User Value: 
+This provides a secure and dependable experience. Users can trust that their data is handled safely and that the platform performs reliably every single time.
 
 ---
 
