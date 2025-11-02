@@ -15,9 +15,8 @@ The entire platform is built upon the powerful, scalable, and secure infrastruct
 
 ### Our Use of Google Cloud AI:
 
-* **☁️ Vertex AI (The Heart of our ML Operations):** Vertex AI is central to our entire machine learning lifecycle.
-    * **Vertex AI Training:** All our custom deep learning models—including the **Image CNN**, **PhysNet3D (rPPG)**, and **LipFD**—were trained using custom training jobs on Vertex AI. This allowed us to leverage powerful GPU acceleration (NVIDIA A100s) and a managed environment for reproducible, high-performance model training.
-    * **Vertex AI Prediction & Endpoints:** Trained models are deployed to **Vertex AI Endpoints**. Our backend API calls these secure, auto-scaling endpoints for real-time inference, ensuring low latency and high availability for our users. This abstracts away the complexity of model serving.
+* ** Use of Google Fact checker tools
+    * Use of Fact check tools api along with search engine API and News APIs is used to detect missinformation in text modality    
 
 * **☁️ Cloud Run (Scalable Serverless Backend):**
     * Our entire backend, built with Python (Flask/FastAPI), is deployed on Cloud Run. This provides a fully managed, serverless platform that automatically scales from zero to handle any workload, ensuring cost-efficiency and operational excellence. The backend serves as the central API gateway for our frontend and web extension.
