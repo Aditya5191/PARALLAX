@@ -15,7 +15,7 @@ The entire platform is built upon the powerful, scalable, and secure infrastruct
 
 ### Our Use of Google Cloud AI:
 
-* ** Use of Google Fact checker tools
+* ** Use of Google Fact checker tools **
     * Use of Fact check tools api along with search engine API and News APIs is used to detect missinformation in text modality    
 
 * **☁️ Cloud Run (Scalable Serverless Backend):**
