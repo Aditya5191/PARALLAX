@@ -1,13 +1,19 @@
-# 🖼️ Image Modality: A Two-Pronged Approach to Deepfake Detection
+## A Note on Our Two-Pronged Strategy
 
+It's important to understand the distinct and specialized roles of our two image analysis models. The Zero-Shot detector is intentionally a generalist. Since it is not trained on a specific dataset, its primary purpose is to detect a broad range of AI-generated content like artwork, cartoons, and landscapes where a specialized detector would fail. Consequently, it may not work perfectly for the nuanced task of detecting human face deepfakes.
+
+Conversely, our Custom CNN is a specialist, meticulously trained on a massive dataset of human faces to achieve the highest possible accuracy in that critical domain. Its job is to see the human faces and it is not intended for other fields like AI art. We designed these two models to be complementary, not interchangeable; each is optimized for a different purpose to provide comprehensive protection.
+
+# 🖼️ Image Modality: A Two-Pronged Approach to Deepfake Detection
 This directory contains the complete solution for our image authenticity analysis. We recognize that "deepfake" content is not limited to human faces; it can include AI-generated art, animals, landscapes, and more. To address this, we've developed a powerful, two-pronged strategy:
 
-1.  **A Specialized Custom CNN**: A highly accurate, fine-tuned model built exclusively for the most common and critical use case: **detecting deepfake human faces**.
-2.  **A Generalized Zero-Shot Detector**: A flexible and future-proof pipeline that can identify **any type of AI-generated image** (art, animals, objects) without ever needing to be retrained.
+## A Specialized Custom CNN:
+A highly accurate, fine-tuned model built exclusively for the most common and critical use case: detecting deepfake human faces.
+
+## A Generalized Zero-Shot Detector: 
+A flexible and future-proof pipeline that can identify any type of AI-generated image (art, animals, objects) without ever needing to be retrained.
 
 Together, these two components provide a robust and comprehensive defense against all forms of image-based misinformation.
-
----
 ---
 
 #  Zero-Shot Deepfake Detection using CLIP + Digital Forensics
@@ -18,9 +24,6 @@ This project presents a **revolutionary Deepfake Detection Pipeline** that combi
 
 >  The model also provides **human-interpretable reasoning** for its verdict based on measurable features like **sharpness, noise residuals**, and **ELA artifacts**.
 
-<img width="350" height="400" alt="image" src="https://github.com/user-attachments/assets/f6809556-9579-46de-a3cb-8e303753cbb0" />  
-
-<img width="350" height="30" alt="image" src="https://github.com/user-attachments/assets/ab3de7d5-2a10-4bcb-8b69-601346dd5d41" />
 
 ---
 

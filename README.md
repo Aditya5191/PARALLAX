@@ -1,15 +1,15 @@
-# 🛡️ DeepGuardian: An AI-Powered Multi-Modal Misinformation Detection Platform
+# 🛡️ Parallax: An AI-Powered Multi-Modal Misinformation Detection Platform
 
-**DeepGuardian is a state-of-the-art, end-to-end ecosystem designed to combat digital misinformation by providing forensic-grade analysis of content across all major media formats. Powered by a suite of custom deep learning models and seamlessly integrated with Google Cloud AI, this project delivers a robust, scalable, and transparent solution for verifying the authenticity of the digital world.**
+**Parallax is a state-of-the-art, end-to-end ecosystem designed to combat digital misinformation by providing forensic-grade analysis of content across all major media formats. Powered by a suite of custom deep learning models and seamlessly integrated with Google Cloud AI, this project delivers a robust, scalable, and transparent solution for verifying the authenticity of the digital world.**
 
-This repository is the central hub for all components of the DeepGuardian project, from the backend APIs and advanced AI models to the user-facing frontend and browser extension.
+This repository is the central hub for all components of the Parallax project, from the backend APIs and advanced AI models to the user-facing frontend and browser extension.
 
-https://deepguardian-website.onrender.com
+http://104.197.87.77:8080/
 ---
 
 ## 🏛️ Technical Architecture & Google Cloud AI Integration
 
-DeepGuardian is architected as a modern, cloud-native application, leveraging a microservice-inspired approach where each detection modality can be scaled and updated independently. Our commitment to high-quality, modular code is evident in our clean project structure and well-documented components.
+Parallax is architected as a modern, cloud-native application, leveraging a microservice-inspired approach where each detection modality can be scaled and updated independently. Our commitment to high-quality, modular code is evident in our clean project structure and well-documented components.
 
 The entire platform is built upon the powerful, scalable, and secure infrastructure of **Google Cloud**.
 
@@ -29,7 +29,7 @@ The entire platform is built upon the powerful, scalable, and secure infrastruct
 
 ## 📂 Project Component Breakdown
 
-This repository is organized into the primary components of the DeepGuardian ecosystem. Each directory contains a dedicated `README.md` with in-depth technical details, setup instructions, and performance metrics for that specific module.
+This repository is organized into the primary components of the Parallax ecosystem. Each directory contains a dedicated `README.md` with in-depth technical details, setup instructions, and performance metrics for that specific module.
 
 | Component | Directory Path | Description & Key Technologies |
 | :--- | :--- | :--- |
@@ -39,7 +39,7 @@ This repository is organized into the primary components of the DeepGuardian eco
 | **Text Misinformation** | (https://github.com/Aditya5191/DEEPFAKE_DETECTION/tree/main/text_modality(misinformation)) | A hybrid model using stylistic and semantic analysis to determine if text was written by an LLM. Its logic is served via our main backend API. |
 | **Backend** | [`./Backend/`](./Backend/) | The central nervous system of the platform. A Python-based API that handles requests, interfaces with Google Cloud services, and serves results. |
 | **Frontend** | [`./Frontend/`](./Frontend/) | The user-facing web application (e.g., built in React/Vue) that provides a rich, interactive interface for uploading and analyzing content. |
-| **Web Extension** | [`./Web-Extension/`](./Web-Extension/) | A powerful browser extension that brings DeepGuardian's capabilities directly into the user's browsing experience for seamless, real-time protection. |
+| **Web Extension** | [`./Web-Extension/`](./Web-Extension/) | A powerful browser extension that brings Parallax's capabilities directly into the user's browsing experience for seamless, real-time protection. |
 
 ---
 
@@ -55,12 +55,12 @@ We adhere to a high standard of software engineering to ensure our solution is r
 
 ## 🚀 Getting Started
 
-To explore or run the full DeepGuardian platform, please follow the setup instructions within each component's dedicated `README.md`, starting with the Backend.
+To explore or run the full Parallax platform, please follow the setup instructions within each component's dedicated `README.md`, starting with the Backend.
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/your-username/DeepGuardian.git](https://github.com/your-username/DeepGuardian.git)
-    cd DeepGuardian
+    git clone [https://github.com/your-username/Parallax.git](https://github.com/your-username/Parallax.git)
+    cd Parallax
     ```
 2.  Navigate to the `Backend/` directory and follow its setup guide to deploy the core API.
 3.  Proceed to the `Frontend/` and `Web-Extension/` directories to set up the user-facing components.

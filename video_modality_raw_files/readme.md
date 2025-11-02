@@ -7,6 +7,7 @@ This directory contains our advanced solution for video deepfake detection. Anal
 
 By combining these two methods, we create a powerful and robust system for verifying the authenticity of video content.
 
+
 ---
 ---
 
