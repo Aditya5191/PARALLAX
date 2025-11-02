@@ -18,10 +18,10 @@ The entire platform is built upon the powerful, scalable, and secure infrastruct
 * **Use of Google Fact checker tools**
     * Use of Fact check tools api along with search engine API and News APIs is used to detect missinformation in text modality    
 
-* **☁️ Cloud Run (Scalable Serverless Backend):**
+* **Cloud Run (Scalable Serverless Backend):**
     * Our entire backend, built with Python (Flask/FastAPI), is deployed on Cloud Run. This provides a fully managed, serverless platform that automatically scales from zero to handle any workload, ensuring cost-efficiency and operational excellence. The backend serves as the central API gateway for our frontend and web extension.
 
-* **☁️ Cloud Storage:**
+* **Cloud Storage:**
     * We use Cloud Storage as our primary data lake. It stores our massive training datasets (e.g., the 140k real/fake face images), raw media for analysis, and, most importantly, our versioned model artifacts, ensuring a single source of truth for our ML models.
 
 ---
